@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaFlow Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone-container">
+    <div class="notch"></div>
+
+    <div class="screen">
+
+        <header class="header">
+            <div class="header-left">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="header-center">
+                <h1>AquaFlow</h1>
+                <p>Water Supply System</p>
+            </div>
+
+            <div class="header-right notification-badge">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </header>
+
+        <main class="content">
+            <h2>Dashboard</h2>
+
+            <div class="grid-container">
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon produced-icon">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <span class="card-title">Produced</span>
+                    </div>
+
+                    <div class="card-value">124.8<span>ML</span></div>
+
+                    <div class="card-trend trend-up-gray">
+                        <i class="fa-solid fa-arrow-up"></i> 8.5%
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon stored-icon">
+                            <i class="fa-solid fa-water"></i>
+                        </div>
+                        <span class="card-title">Stored</span>
+                    </div>
+
+                    <div class="card-value">342.6<span>ML</span></div>
+
+                    <div class="card-trend trend-up-green">
+                        <i class="fa-solid fa-arrow-up"></i> 8.5%
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon consumer-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <span class="card-title">Consumer</span>
+                    </div>
+
+                    <div class="card-value">28,543</div>
+
+                    <div class="card-trend trend-up-green">
+                        <i class="fa-solid fa-arrow-up"></i> 2.1%
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon alerts-icon">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <span class="card-title">Alerts</span>
+                    </div>
+
+                    <div class="card-value">3</div>
+
+                    <a href="#" class="view-all-btn">View all</a>
+                </div>
+
+            </div>
+
+            <div class="map-card">
+                <div class="map-header">System Overview</div>
+                <div class="map-container">
+                    <img src="images/map.png" alt="System Map Overview" class="map-img">
+                </div>
+            </div>
+
+        </main>
+
+        <div class="home-indicator-container">
+            <div class="home-indicator"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
